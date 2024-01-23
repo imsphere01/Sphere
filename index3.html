@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Site</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="app.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-F4M7TJJF33"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-F4M7TJJF33");
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="shareIcon">
+        <a href="connectingLinks/landing.html">
+          <i class="fa-solid fa-paper-plane"></i>
+        </a>
+      </div>
+      <div class="logo">
+        <i class="fa-solid fa-circle"></i>
+      </div>
+      <div class="heading">
+        <h1>Select the year</h1>
+      </div>
+      <div class="year">
+        <div class="currentYear">1-Year</div>
+        <div class="yearsContent" id="yearDropdown">
+          <div class="unhidden">
+            <a href="index.html">1-Year</a>
+            <hr />
+            <a href="connectingLinks/landing.html">2-Year</a>
+            <hr />
+            <a href="connectingLinks/landing.html">3-Year</a>
+            <hr />
+            <a href="connectingLinks/landing.html">4-Year</a>
+          </div>
+        </div>
+        <button class="yearToggler">
+          <i class="fa-solid fa-arrow-down"></i>
+        </button>
+      </div>
+      <div class="subjects">
+        <div class="subject">
+          UNIT-1
+          <a href="#" class="sub1">
+            <div class="rightIcon">
+              <i class="fa-solid fa-angles-right"></i></div
+          ></a>
+        </div>
+        <div class="subject">
+          UNIT-2
+          <a href="#" class="sub2">
+            <div class="rightIcon">
+              <i class="fa-solid fa-angles-right"></i></div
+          ></a>
+        </div>
+        <div class="subject">
+          UNIT-3
+          <a href="#" class="sub3">
+            <div class="rightIcon">
+              <i class="fa-solid fa-angles-right"></i></div
+          ></a>
+        </div>
+        <div class="subject">
+          UNIT-4
+          <a href="#" class="sub4">
+            <div class="rightIcon">
+              <i class="fa-solid fa-angles-right"></i></div
+          ></a>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

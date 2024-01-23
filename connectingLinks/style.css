@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto',sans-serif;
+    background-color: #100722;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.shareIcon{
+    padding-left: 20px;
+    padding-top: 30px;
+    font-size: 1.25rem;
+}
+
+.shareIcon a i{
+    color: #74c0fc;
+    transform: all 1s;
+}
+
+.shareIcon a i:hover{
+    color: rgb(164, 158, 158);
+}
+@media(min-width:930px){
+    .shareIcon{
+        margin-left: 20px;
+        margin-top: 10px;
+        font-size: 1.7rem;
+    }
+}
+h1{
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    margin-top: 20vh;
+}
+p{
+    text-align: center;
+    color: grey;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin-top: 30px;
+}
+
+.forInput{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.thanksLink{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emailID{
+    height: 40px;
+    width: 30rem;
+    padding-left: 20px;
+    border-radius: 30px;
+}
+
+.submitButton{
+    padding-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    height: 40px;
+    width: 10rem;
+    background-color: #6A96AF;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+/*_________________________________________________________________*/
+
+.forThanks{
+    display: flex;
+    justify-content: center;
+}
+
+.thanks{
+    text-align: center;
+    width: 50%;
+    color: #6A96AF;
+}
+
+.goToHome{
+    display: flex;
+    justify-content: center;
+}
+.homeButton{
+    margin-top: 30px;
+    text-decoration: none;
+    background-color: #6A96AF;
+    color: #100722;
+    padding: 10px 30px;
+    font-size: 1.5rem;
+    transition: all 0.5s;
+    border-radius: 50px;
+}
+
+.homeButton:hover{
+    background-color: aliceblue;
+}
+
+.homeButton i{
+    color: #100722;
+    margin-right: 10px;
+}
+
+
+.logo{
+    align-self: flex-end;
+    margin-right: 30px;
+    margin-top: -25px;
+    font-size: 1.2rem;
+}
+
+
+.logo i{
+    color:#74c0fc;
+}
+
+.logo i:hover{
+    color: rgb(164, 158, 158);
+}
+
+@media(min-width:930px){
+    .logo{
+        margin-right: 50px;
+        margin-top: -40px;
+        font-size: 1.6rem;
+    }
+}
