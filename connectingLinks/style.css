@@ -21,7 +21,7 @@ body{
 }
 
 .shareIcon a i{
-    color: #74c0fc;
+    color: #E9DBDB;
     transform: all 1s;
 }
 
@@ -36,16 +36,16 @@ body{
     }
 }
 h1{
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
-    color: white;
+    color: #E9DBDB;
     font-weight: 300;
     margin-top: 20vh;
 }
 p{
     text-align: center;
     color: grey;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     font-weight: 300;
     margin-top: 30px;
 }
@@ -65,7 +65,7 @@ p{
 
 .emailID{
     height: 40px;
-    width: 30rem;
+    width: 18rem;
     padding-left: 20px;
     border-radius: 30px;
 }
@@ -104,7 +104,7 @@ p{
     background-color: #6A96AF;
     color: #100722;
     padding: 10px 30px;
-    font-size: 1.5rem;
+    font-size: 1rem;
     transition: all 0.5s;
     border-radius: 50px;
 }
@@ -128,7 +128,7 @@ p{
 
 
 .logo i{
-    color:#74c0fc;
+    color:#E9DBDB;
 }
 
 .logo i:hover{
