@@ -85,7 +85,7 @@ hr{
 
 
 .logo i{
-    color:#74c0fc;
+    color:#E9DBDB;
 }
 
 .logo i:hover{
@@ -94,12 +94,12 @@ hr{
 
 
 h1{
-    margin-top: 1rem;
+    margin-top: 3rem;
     color:#6A96AF;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 300;
     text-align: center;
-    font-size:3rem;
+    font-size:2.8rem;
 
 }
 .year{
@@ -139,13 +139,13 @@ h1{
     background-color: rgb(217, 196, 196);
 }
 .subjects{
-    margin-top: 50px;
+    margin-top: 10px;
     align-items: baseline;
 }
 .subject{
     display: grid;
     grid-template-columns: 1fr min-content;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color:#6A96AF;
     margin-top: 40px;
     margin-left: 100px;
