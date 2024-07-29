@@ -4,8 +4,9 @@
 }
 
 body{
-    font-family: 'Roboto',sans-serif;
-    background-color: #100722;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #1e1e1e;
+    overflow:hidden;
 }
 
 .yearsContent {
@@ -32,7 +33,7 @@ rgb(157, 141, 187);*/
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #6a96af;
+    background-color: #e9e9e9;
     border-radius: 10px;
 
 }
@@ -57,6 +58,7 @@ hr{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-width: 100svw;
 }
 
 .shareIcon{
@@ -95,21 +97,67 @@ hr{
 
 h1{
     margin-top: 3rem;
-    color:#6A96AF;
-    font-family: 'Times New Roman', Times, serif;
+    color:#e9e9e9;
+    font-family:Arial, Helvetica, sans-serif;
     font-weight: 300;
     text-align: center;
-    font-size:2.8rem;
+    font-size:2.8em;
 
 }
 .year{
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    flex-direction: row;
+    border: #e9e9e935 solid 2px;
+    color: #e9e9e9;
+    width: fit-content;
+    justify-content: space-between;
+    align-self:center;
+    border-radius: 1rem;
+    padding-inline: 2rem;
+    padding-block: 0.5xrem;
+    background-color: #e9e9e916;
+    
+}
+
+.active{
+    margin: 1rem;
+    padding-inline: 3rem;
+    padding-block: 1rem;
+    border-radius: 0.8rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: #1e1e1e;
+    color: #e9e9e9;
+    border: none;
+}
+
+.inactive{
+    margin: 1rem;
+    padding-inline: 3rem;
+    padding-block: 1rem;
+    border-radius: 0.8rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: #1e1e1e00;
+    color: #e9e9e9c1;
+    border: none;
+}
+span{
+    color: #d36511;
+    font-size: 80px;
+}
+
+a{
+    text-decoration: none;
+    
+        color: #e9e9e9;
+
 }
 .currentYear{
     color: #100722;
-    background-color: #6A96AF;
+    background-color: #e9e9e9;
     display: inline-flex;
     font-size: 1.5rem;
     font-weight: 700;
@@ -120,7 +168,7 @@ h1{
 }
 
 .yearToggler{
-    background-color:#6A96AF;
+    background-color:#e9e9e9;
     border: none;
     font-size: 15px;
     margin-top: 10px;
@@ -146,12 +194,13 @@ h1{
     display: grid;
     grid-template-columns: 1fr min-content;
     font-size: 1.8rem;
-    color:#6A96AF;
-    margin-top: 40px;
-    margin-left: 100px;
-    margin-right: 100px;
-    border-bottom: solid 2px #6A96AF;
+    color:#e9e9e9;
+    margin-inline: 8rem;
+    margin-block: 3rem;
+    border: solid 2px #e9e9e934;
+    padding: 2rem;
     transform: all 0.3s;
+    border-radius: 0.5rem
 }
 
 .subject:hover{
@@ -160,92 +209,150 @@ h1{
 }
 
 .rightIcon{
-    color: #6a96af;
+    color: #e9e9e9;
 }
 
 .subject:hover .rightIcon{
     color: white;
 }
 
-@media(min-width:930px){
-    .subject{
-        margin-left: 200px;
-        margin-right: 200px;
-    }
+@media(max-width:300px){
+
+body{
+    overflow: hidden;
 }
 
-@media(min-width:1200px){
     .subject{
-        margin-left: 250px;
-        margin-right: 250px;
+        display: grid;
+        grid-template-columns: 1fr min-content;
+        font-size: 1rem;
+        color:#e9e9e9;
+        margin: 1rem;
+        border: solid 2px #e9e9e934;
+        padding: 1rem;
+        transform: all 0.3s;
+        border-radius: 0.5rem
     }
-}
-
- @media(min-width:930px){
-    .shareIcon{
-        margin-left: 20px;
-        margin-top: 10px;
-        font-size: 1.7rem;
-    }
-    /* h1{
-        margin-top: 30px;
-        font-size:3.5rem;
-    }
-    .year{
-        margin-top: 40px;
-    }
-    .currentYear{
-        font-size: 1.75rem;
-        padding:15px 60px;
-        border-radius: 50px;
-    }
-    
-    .yearToggler{
-        font-size: 30px;
-        margin-top: 8px;
-        width: 50px;
-        height: 50px;
-    }
-    .subject{
-        font-size: 2.6rem;
-        margin-left: 200px;
-        margin-right: 200px;
-    } */
-}
-
-/* 
-@media(min-width:1250px){
     h1{
-        margin-top: 20px;
-        font-size:4rem;
+        font-size: 1.2rem;
     }
+
     .year{
-        margin-top: 30px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        border: #e9e9e935 solid 2px;
+        color: #e9e9e9;
+        width: fit-content;
+        justify-content: space-between;
+        align-self:center;
+        border-radius: 0.5rem;
+        padding-inline: 0.8rem;
+        padding-block: 0.5rem;
+        background-color: #e9e9e916;
+        
     }
-    .currentYear{
-        font-size: 2rem;
-        padding:15px 80px;
-        border-radius: 50px;
+
+    .active{
+        margin: 0.5rem;
+        padding-inline: 1rem;
+        padding-block: 0.5rem;
+        border-radius: 0.8rem;
+        font-size: 1rem;
+        font-weight: 500;
+        background-color: #1e1e1e;
+        color: #e9e9e9;
+        border: none;
     }
     
-    .yearToggler{
-        font-size: 30px;
-        margin-top: 15px;
-        width: 50px;
-        height: 50px;
+    .inactive{
+        margin: 0.5rem;
+        padding-inline: 1rem;
+        padding-block: 0.5rem;
+        border-radius: 0.8rem;
+        font-size: 1rem;
+        font-weight: 500;
+        background-color: #1e1e1e00;
+        color: #e9e9e9c1;
+        border: none;
     }
-    .subject{
-        font-size: 3rem;
-        margin-left: 300px;
-        margin-right: 300px;
-    } 
-}
-*/
 
-@media(min-width:930px){
-    .logo{
-        margin-right: 50px;
-        margin-top: -40px;
-        font-size: 1.6rem;
-    }
+
+
 }
+
+
+button:hover{
+    background-color: #e9e9e94e;
+    color: #1e1e1e;
+    
+}
+
+
+@media(max-width:700px){
+
+    body{
+        overflow: hidden;
+    }
+    
+        .subject{
+            display: grid;
+            grid-template-columns: 1fr min-content;
+            font-size: 1rem;
+            color:#e9e9e9;
+            margin: 1rem;
+            border: solid 2px #e9e9e934;
+            padding: 1rem;
+            transform: all 0.3s;
+            border-radius: 0.5rem
+        }
+        h1{
+            font-size: 1.2rem;
+        }
+    
+        .year{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            border: #e9e9e935 solid 2px;
+            color: #e9e9e9;
+            width: fit-content;
+            justify-content: space-between;
+            align-self:center;
+            border-radius: 0.5rem;
+            padding-inline: 0.8rem;
+            padding-block: 0.5rem;
+            background-color: #e9e9e916;
+            
+        }
+    
+        .active{
+            margin: 0.5rem;
+            padding-inline: 1rem;
+            padding-block: 0.5rem;
+            border-radius: 0.4rem;
+            font-size: 1rem;
+            font-weight: 500;
+            background-color: #1e1e1e;
+            color: #e9e9e9;
+            border: none;
+        }
+        
+        .inactive{
+            margin: 0.5rem;
+            padding-inline: 1rem;
+            padding-block: 0.5rem;
+            border-radius: 0.4rem;
+            font-size: 1rem;
+            font-weight: 500;
+            background-color: #1e1e1e00;
+            color: #e9e9e9c1;
+            border: none;
+        }
+    
+    
+    
+    }
+    
