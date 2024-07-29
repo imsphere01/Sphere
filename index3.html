@@ -35,16 +35,16 @@
     <div class="container">
       <div class="shareIcon">
         <a href="connectingLinks/landing.html">
-          <i class="fa-solid fa-paper-plane"></i>
+          <i class="fa-solid fa-arrow-right"></i>
         </a>
       </div>
       <div class="logo">
         <i class="fa-solid fa-circle"></i>
       </div>
       <div class="heading">
-        <h1>Select the year</h1>
+        <h1>Select the Unit</h1>
       </div>
-      <div class="year">
+      <!--<div class="year">
         <div class="currentYear">1-Year</div>
         <div class="yearsContent" id="yearDropdown">
           <div class="unhidden">
@@ -60,38 +60,69 @@
         <button class="yearToggler">
           <i class="fa-solid fa-arrow-down"></i>
         </button>
-      </div>
-      <div class="subjects">
-        <div class="subject">
+      </div>-->
+      <div class="subjects" id="but">
+        <div class="subject" >
           UNIT-1
           <a href="#" class="sub1">
             <div class="rightIcon">
-              <i class="fa-solid fa-angles-right"></i></div
+              <i class="fa-solid fa-arrow-right"></i></div
           ></a>
         </div>
         <div class="subject">
           UNIT-2
           <a href="#" class="sub2">
             <div class="rightIcon">
-              <i class="fa-solid fa-angles-right"></i></div
+              <i class="fa-solid fa-arrow-right"></i></div
           ></a>
         </div>
         <div class="subject">
           UNIT-3
           <a href="#" class="sub3">
             <div class="rightIcon">
-              <i class="fa-solid fa-angles-right"></i></div
+              <i class="fa-solid fa-arrow-right"></i></div
           ></a>
         </div>
         <div class="subject">
           UNIT-4
           <a href="#" class="sub4">
             <div class="rightIcon">
-              <i class="fa-solid fa-angles-right"></i></div
+              <i class="fa-solid fa-arrow-right"></i></div
           ></a>
         </div>
       </div>
     </div>
-    <script src="app.js"></script>
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
+      import {
+        getStorage,
+        ref,
+        getDownloadURL,
+      } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-storage.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyBaera8zZYw2YKJCHPBBtmibY1LztsGdrY",
+        authDomain: "(link unavailable)",
+        projectId: "file-c6979",
+        storageBucket: "(link unavailable)",
+        messagingSenderId: "358138290042",
+        appId: "1:358138290042:web:fae91b5a7bbe232410c0c3",
+        measurementId: "G-GQMDBHTDXW",
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const storage = getStorage(app);
+
+      document.getElementById("but").addEventListener("click", function () {
+        getDownloadURL(ref(storage, "gs://file-c6979.appspot.com/bill (4).pdf"))
+          .then((url) => {
+            // Open the PDF file in a new tab/window
+            window.open(url, "_blank");
+          })
+          .catch((error) => {
+            console.log(error.Message);
+          });
+      });
+    </script>
   </body>
 </html>
